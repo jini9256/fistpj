@@ -1,5 +1,12 @@
-import '@/styles/globals.css'
+import React from "react";
 
-export default function App({ Component, pageProps }) {
-  return <Component {...pageProps} />
-}
+const App = ({ Component, pageProps }) => {
+  return (
+    <div>
+      <Component {...pageProps} />
+      <span>Hello</span>
+    </div>
+  );
+};
+
+export default App;
